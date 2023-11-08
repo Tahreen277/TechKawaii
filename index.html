@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechKawaii</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    /* body {
+      font-family: "Roboto Condensed", sans-serif;
+    } */
+
+    /* .navbar {
+      background-color: aliceblue;
+    } */
+
+    /* @media (max-width: 768px) {
+      .navbar-toggle {
+        display: block;
+      }
+      .navbar-links {
+        display: none;
+      }
+      .navbar-links-responsive {
+        display: none;
+        flex-direction: column;
+      }
+    }
+
+    /* Adjust the styling of the navbar links for small screens */
+    /* @media (max-width: 576px) {
+      .navbar-links a {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    .navbar-toggle {
+      display: none;
+    }
+
+    .navbar-links {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+    }
+
+    .navbar-links a {
+      color: #000;
+      margin-right: 50px;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Roboto Condensed";
+    } * */
+    /* 
+    @media (max-width: 768px) {
+      .navbar-links {
+        display: none;
+      }
+
+      .navbar-toggle {
+        display: block;
+        cursor: pointer;
+      }
+
+      .navbar-links-responsive {
+        display: none;
+        flex-direction: column;
+      }
+
+      .navbar-links-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar-links-mobile a {
+        margin: 10px 0;
+      }
+    }
+ */
+
+    /* .navbar-toggle {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .navbar-links {
+          display: none;
+        }
+
+        .navbar-toggle {
+          display: block;
+          cursor: pointer;
+        }
+
+        .navbar-links-responsive {
+          display: none;
+          flex-direction: column;
+        }
+      } */
+
+    /* .custom-navbar {
+      background-color: #fff;
+      
+    }
+
+    .navbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-logo {
+      width: 30%;
+    }
+
+    .navbar-links {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+    }
+
+    .navbar-links a {
+      color: #000;
+      margin-right: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Roboto Condensed";
+      text-decoration: none;
+    }
+
+    .navbar-links a:hover {
+      text-decoration: underline;
+    } */
+
+    /* @media (max-width: 768px) {
+      .navbar-content {
+        flex-direction: column;
+      }
+
+      .navbar-links {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .navbar-logo {
+        width: 30%;
+      }
+
+      .navbar-links a {
+        margin: 10px;
+      }
+    } */
+
+    .navbar a:hover{
+      text-decoration: underline;
+    }
+    .content {
+      position: absolute;
+      /* padding: 20%;  */
+      /* position: relative; */
+      padding: 20% 20%;
+      /* margin-top: 1%; */
+      margin-left: -15%;
+      width: 100%;
+      /* height: 400%; */
+    }
+
+    .navbar ul li a {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: Roboto Condensed;
+      /* margin-left: 60px; */
+      /* justify-content: space-between; */
+    }
+
+    .content h1 {
+      color: #4f6268;
+      text-align: center;
+      padding: 5%;
+      font-size: 5vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%;
+      margin-right: 30%;
+      margin-top: -24%;
+      border-radius: 20px;
+      /* height: 21%; */
+      border: 3px solid #c8971a;
+      background: rgba(255, 255, 255, 0.69);
+      box-shadow: 4px 3px 9px 0px #935a26;
+    }
+
+    .tech {
+      color: #4f6268;
+      text-align: center;
+      font-family: Roboto Condensed;
+      font-size: 5vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 68px */
+    }
+
+    #works {
+      background-image: url("Assests/images/image\ 2.png");
+      width: 100%;
+      height: 100%;
+    }
+
+    p {
+      color: #4f6268;
+      text-align: center;
+      font-family: Roboto Condensed;
+      font-size: 3vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 38px */
+    }
+
+    .btnn {
+      border-radius: 50px;
+      border: 3px solid #4f6268;
+      background: rgba(247, 251, 254, 0);
+      box-shadow: 7px 9px 5px 4px rgba(111, 89, 80, 0.25);
+      width: 20%;
+      color: #4f6268;
+      text-align: center;
+      font-family: Roboto Condensed;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 32px */
+      margin-left: 40%;
+      /* align-items: center;
+      justify-content: center; */
+      margin-top: 3%;
+      /* text-align: center; */
+    }
+
+    .vl {
+      border-left: 5px solid #4f6268;
+      height: 500px;
+    }
+
+    /* .vl {
+    border-top: 5px solid #4f6268;
+    border-left: none;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 992px) {
+    .vl {
+      border-top: none;
+      border-left: 5px solid #4f6268;
+      width: auto;
+      height: 100%;
+    }
+  } */
+
+    .our {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-right: 9%;
+      padding-left: 9%;
+    }
+
+    .footer {
+      background-color: #e7e7e7;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 400px;
+      margin: 0 auto;
+      /* float: right; */
+    }
+
+    /* .mySlides {
+      display: none;
+      animation: flash 2s infinite;
+    }
+
+    @keyframes flash {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    } */
+
+    /* .mySlides {
+  display: none;
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+    /* .mySlides {
+    display: none;
+    animation: fade 1.5s;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } */
+    hr {
+      background: #897f6c;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .mySlides {
+      display: none;
+      animation: fade 1.5s;
+      transition: opacity 1.5s ease-in-out;
+      text-align: center; /* Center the content */
+    }
+
+    .mySlides:nth-child(4) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .btnn {
+        width: 50%;
+        margin-left: 20%;
+      }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      .btnn {
+        width: 50%;
+        margin-left: 25%;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+      .btnn {
+        width: 40%;
+        margin-left: 30%;
+      }
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./Assests/images/logofinal_1-removebg-preview.png"
+              class="img-fluid"
+              width="50%"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav ms-auto mb-5 mb-lg-0"
+              style="margin-right: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#"
+                  style="color: #000; margin-right: 50px"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./about.html"
+                  style="color: #000; margin-right: 50px"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  style="color: #000; margin-right: 50px"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  style="color: #000; margin-right: 50px"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- <div class="custom-navbar">
+      <div class="container">
+        <div
+          class="navbar-content"
+          style="display: flex; align-items: flex-end"
+        >
+          <div class="navbar-logo">
+            <img
+              src="./Assests/images/logofinal_1-removebg-preview.png"
+              height="100"
+            />
+          </div>
+          <div
+            class="navbar-links"
+            style="
+              margin-right: 20%;
+              justify-content: space-between;
+              margin-bottom: 15px;
+            "
+          >
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="navbar-links-responsive" id="navbarLinks">
+        <div class="navbar-links-mobile">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div> -->
+    
+
+    <!-- hero -->
+    <section id="hero">
+      <div class="hey">
+        <div class="row">
+          <img
+            src="./Assests/images/3d-internet-secuirty-badge 1.png"
+            class="img-fluid"
+          />
+          <div class="content">
+            <h1>Forging the future with Blockchain Solution</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="container mt-5">
+        <div class="text-center">
+          <h1 class="tech">How TechKawaii Works</h1>
+          <div style="display: flex; align-items: center">
+            <hr
+              style="
+                flex: 1;
+                border: none;
+                border-top: 2px solid #4f6268;
+                width: 40%;
+              "
+            />
+            <span style="padding: 0 10px">&nbsp;</span>
+            <hr
+              style="
+                flex: 1;
+                border: none;
+                border-top: 2px solid #4f6268;
+                width: 40%;
+              "
+            />
+          </div>
+        </div>
+
+        <p class="text-center">
+          We work collaboratively with our clients, following a streamlined and
+          iterative approach. Our process begins with in-depth consultations to
+          understand the specific requirements and goals. We then employ our
+          expertise to design, develop, and implement tailored blockchain
+          solutions.
+        </p>
+        <div class="btnn">
+          <button type="button" class="btn" style="justify-content: center">
+            Download WhitePaper
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-5 mb-5">
+        <div class="row border-end">
+          <div class="col-lg-6 our">
+            <h1 class="text-center" style="font-size: 9vw; color: #4f6268">
+              OUR CORE SERVICES
+            </h1>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="vl">
+              <div class="slideshow-container">
+                <div class="mySlides">
+                  <img src="./Assests/images/bit1.png" style="width: 100%" />
+                  <h1 class="text-center">BlockChain</h1>
+                </div>
+
+                <div class="mySlides">
+                  <img src="./Assests/images/bit2.png" style="width: 100%" />
+                  <h1 class="text-center">Fintech</h1>
+                </div>
+
+                <div class="mySlides">
+                  <img src="./Assests/images/bit3.png" style="width: 100%" />
+                  <h1 class="text-center">Cybersecurity</h1>
+                </div>
+
+                <div class="mySlides">
+                  <img
+                    src="./Assests/images/bit4.png"
+                    style="width: 100%; margin-top: 30%"
+                  />
+                  <h1 class="text-center" style="margin-top: 5%">IT Service</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mt-3">
+            <h4>Tech Kawaii</h4>
+            <ul>
+              <li class="list-unstyled mb-1">Download Broacher</li>
+              <li class="list-unstyled mb-1">Services</li>
+              <li class="list-unstyled">Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mt-3">
+            <h4>Social Media</h4>
+            <ul>
+              <li class="list-unstyled">Facebook</li>
+              <li class="list-unstyled">Instagram</li>
+              <li class="list-unstyled">Telegram</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mt-3">
+            <h4>Details</h4>
+            <ul>
+              <li class="list-unstyled">About Us</li>
+              <li class="list-unstyled">Technology</li>
+              <li class="list-unstyled">Vision & Mission</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 3 seconds
+      }
+    </script> -->
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 5 seconds
+      }
+    </script>
+    <!-- 
+<script>
+  function toggleNavbar() {
+    var navbarLinks = document.getElementById("navbarLinks");
+    if (navbarLinks.style.display === "flex") {
+      navbarLinks.style.display = "none";
+    } else {
+      navbarLinks.style.display = "flex";
+    }
+  }
+</script> -->
+  </body>
+</html>
